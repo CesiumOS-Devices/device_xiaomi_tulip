@@ -24,7 +24,12 @@
 # Inherit from sdm660-common
 $(call inherit-product, device/xiaomi/sdm660-common/sdm660.mk)
 
+
 DEVICE_PATH := device/xiaomi/tulip
+
+# MiuiCamera
+$(call inherit-product, vendor/MiuiCamera/config.mk)
+
 
 # Audio
 PRODUCT_COPY_FILES += \
